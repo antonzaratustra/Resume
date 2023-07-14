@@ -36,3 +36,9 @@ function randomBorderShiningAndColor() {
 
 
 let timerShining = setInterval(randomBorderShiningAndColor, 1000)
+
+const currentYear = new Date().getFullYear()
+
+const yearElement = document.querySelector('.year')
+
+yearElement.innerHTML = `❤ Frontend from 2014 to ${currentYear}`
