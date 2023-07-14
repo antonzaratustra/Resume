@@ -14,12 +14,9 @@ function getRandomColor () {
 
 let timerId = setInterval(setRandomBodyColor, 10000)
 
-
 document.body.onclick = setRandomBodyColor
 
-//=========================
-
-function makeSizeLarger(event) {
+function makeOreo(event) {
      event.target.style.border = `2px dotted ${getRandomColor()}`
      event.target.style.borderRadius = '50%'
      event.target.style.textAlign = 'center'
@@ -27,7 +24,15 @@ function makeSizeLarger(event) {
 
 let cards = document.getElementsByClassName('section_card')
 
-for (let card of cards) {card.addEventListener('mouseover', makeSizeLarger)}
+for (let card of cards) {card.addEventListener('mouseover', makeOreo)}
+
+let forms = document.getElementsByTagName('form')
 
 
+function randomBorderShiningAndColor() {
+    forms[0].style.boxShadow = `${getRandomColor()} 5px 5px 5px`
+    forms[0].style.color = `${getRandomColor()}`
+}
 
+
+let timerShining = setInterval(randomBorderShiningAndColor, 1000)
