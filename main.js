@@ -18,7 +18,7 @@ document.body.onclick = setRandomBodyColor
 
 function makeOreo(event) {
      event.target.style.border = `2px dotted ${getRandomColor()}`
-     event.target.style.borderRadius = '50%'
+     event.target.style.borderRadius = `${Math.random() * (50 - 0)}%`
      event.target.style.textAlign = 'center'
 }
 
@@ -42,3 +42,23 @@ const currentYear = new Date().getFullYear()
 const yearElement = document.querySelector('.year')
 
 yearElement.innerHTML = `❤ Frontend from 2014 to ${currentYear}`
+
+discoButton = document.querySelector('.fix_button')
+
+function makeDisco() {
+    
+    
+    
+    if (discoButton.innerHTML === 'Start the disco') {
+        discoButton.innerHTML = 'Stop the disco'
+        clearInterval(timerId)
+        timerId = setInterval(setRandomBodyColor, 100)
+    } else {
+        discoButton.innerHTML = 'Start the disco'
+        clearInterval(timerId)
+        timerId = setInterval(setRandomBodyColor, 10000)
+    }
+
+}
+
+discoButton.onclick = makeDisco
