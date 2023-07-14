@@ -1,4 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+body {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+    background-color: orange;
+    color: #494949;
+
+}
+
+.header .section_card {
+    background-color: orangered;
+}
+
+.header a {
+    color: whitesmoke;
+}
+
+.header a:visited {
+    color: whitesmoke;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.circle_image {
+    border-radius: 50%;
+    margin: 20px 0px;
+    margin-bottom: -20px;
+}
+
 h4 {
     color: orangered;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+.section_card {
+    padding: 10px 40px;
+    margin: 15px;
+    background-color: #edf0f4;
+    border-radius: 10px;
+    box-shadow: #4a44444c 5px 5px 5px;
+}
+
+
+
+a {
+    color: orangered;
+    text-decoration: none;
+}
+
+a:visited {
+    color: orangered;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 1px;
+    background-color: #3c0a4f;
+}
+
+input, textarea {
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-family: 'Poppins';
+    border: none;
+    min-width: 400px;
+    min-height: 30px;
+    margin-top: 10px;
+}
+
+textarea {
+}
+
+button {
+    border-radius: 30px;
+    color: whitesmoke;
+    padding: 10px 30px;
+    background-color: orangered;
+    border: none;
+    margin-bottom: 15px;
+    transition: all 400ms;
+}
+
+button:hover {
+color: orangered;
+background-color: transparent;
+border: solid 1px orangered;
+cursor: pointer;
+}
+
+.about {
+background-color: rgb(255, 230, 230);
+}
+
+.social {
+background-color: rgb(230, 255, 230);
+}
+
+.hobbies {
+background-color: rgb(255, 255, 200);
+}
+
+.work {
+background-color: rgb(230, 230, 255);
+}
+
+table {
+    min-width: 600px;
+    text-align: left;
+    line-height: 30px;
 }

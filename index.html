@@ -11,118 +11,140 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <img width="150px" src="./img/avatar.jpg" alt="My photo">
-        <h1><a target="_blank" href="https://github.com/antonzaratustra">Anton Zaratustra</a></h1>
-        <hr>
-        <h4>About me</h4>
-        <p>I love <strong>frontend</strong> and outdoor workouts. I <strong>ran 25 km</strong> (not for the whole year,
-            for
-            one time) in 2023 and wrote my <em><strong>first "hello world" in 2014</strong></em></p>
-        <p>It looks like I know my way around website development and running. <em>But of course this is the tip of the
-                iceberg</em></p>
-        <hr>
-    </header>
-    <section>
-        <h4>Social networks</р4>
-            <p>
-                <a target="_blank" href="https://t.me/antonzaratustra">Telegram</a> |
-                <a target="_blank" href="https://vk.com/antonzaratustra">Vkontakte</a> |
-                <a target="_blank" href="https://www.youtube.com/@antonzaratustra">Youtube</a> |
-                <a target="_blank" href="https://github.com/antonzaratustra">Github</a>
-            </p>
-            <hr>
-    </section>
-    <section>
-        <h4>My hobbies</h4>
-        <ul>
-            <li>Productivity and life-management</li>
-            <li>Photography</li>
-            <li>Blogging</li>
-            <li>Running</li>
-        </ul>
-        <hr>
-    </section>
-    <section>
-        <h4>Work experience</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>Company</th>
-                    <th>Position</th>
-                    <th>Year</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Rosneft</td>
-                    <td>Software Engineer</td>
-                    <td>2014-2018</td>
-                </tr>
-                <tr>
-                    <td>Planet Earth</td>
-                    <td>Digital Nomad</td>
-                    <td>2018-2021</td>
-                </tr>
-                <tr>
-                    <td>Skillzania</td>
-                    <td>Assistant CEO</td>
-                    <td>2021-2022</td>
-                </tr>
-                <tr>
-                    <td>Plan B Smart</td>
-                    <td>Assistant CEO</td>
-                    <td>2021-2022</td>
-                </tr>
-                <tr>
-                    <td>Le Click</td>
-                    <td>Assistant CEO</td>
-                    <td>2021-2022</td>
-                </tr>
-                <tr>
-                    <td>Eat Market</td>
-                    <td>Business Assistant</td>
-                    <td>2021-2022</td>
-                </tr>
-                <tr>
-                    <td>Memoris</td>
-                    <td>Marketing Assistant</td>
-                    <td>2021-2022</td>
-                </tr>
-                <tr>
-                    <td>TRM</td>
-                    <td>Business Assistant</td>
-                    <td>2022-2023</td>
-                </tr>
-            <tbody>
-        </table>
-        <hr>
-    </section>
 
-    <footer>
-        <form>
-            <h2>Contact me</h2>
-            <div>
-                <label for="name">Name</label>
-                <input placeholder="Your full name" type="text" name="" id="label">
-            </div>
-            <br>
-            <div>
-                <label for="email">Email</label>
-                <input placeholder="Your e-mail" type="email" name="" id="email">
-            </div>
-            <br>
-            <div>
-                <label for="message">Message</label>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <section class="section_card">
+                <img class="circle_image" width="150px" src="./img/avatar.jpg" alt="My photo">
+                <h1><a target="_blank" href="https://github.com/antonzaratustra">Anton Zaratustra</a></h1>
+                <hr>
                 <br>
-                <textarea placeholder="Write your message here..." name="" id="message" cols="30" rows="10"></textarea>
-            </div>
+            </section>
+            
+        </header>
+        <section class="section_card social">
+            <h4>Social networks</р4>
+                <p>
+                    <a target="_blank" href="https://t.me/antonzaratustra">Telegram</a> |
+                    <a target="_blank" href="https://vk.com/antonzaratustra">Vkontakte</a> |
+                    <a target="_blank" href="https://www.youtube.com/@antonzaratustra">Youtube</a> |
+                    <a target="_blank" href="https://github.com/antonzaratustra">Github</a>
+                </p>
+                <hr>
+        </section>
+        <section class="section_card about">
+            <h4>About me</h4>
+            <p>I love <strong>frontend</strong> and outdoor workouts. I <strong>ran 25 km</strong> (not for the
+                whole
+                year,
+                for
+                one time) in 2023 and wrote my <em><strong>first "hello world" in 2014</strong></em></p>
+            <p>It looks like I know my way around website development and running. <em>But of course this is the tip
+                    of
+                    the
+                    iceberg</em></p>
+            <hr>
             <br>
-            <button type="submit">Send</button>
-        </form>
-        <hr>
-    </footer>
+            
+        </section>
+        <section class="section_card hobbies">
+            <h4>My hobbies</h4>
+            <ul>
+                <li>Productivity and life-management</li>
+                <li>Photography</li>
+                <li>Blogging</li>
+                <li>Running</li>
+            </ul>
+            <hr>
+            <br>
+        </section>
+        <section class="section_card work">
+            <h4>Work experience</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rosneft</td>
+                        <td>Software Engineer</td>
+                        <td>2014-2018</td>
+                    </tr>
+                    <tr>
+                        <td>Planet Earth</td>
+                        <td>Digital Nomad</td>
+                        <td>2018-2021</td>
+                    </tr>
+                    <tr>
+                        <td>Skillzania</td>
+                        <td>Assistant CEO</td>
+                        <td>2021-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Plan B Smart</td>
+                        <td>Assistant CEO</td>
+                        <td>2021-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Le Click</td>
+                        <td>Assistant CEO</td>
+                        <td>2021-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Eat Market</td>
+                        <td>Business Assistant</td>
+                        <td>2021-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Memoris</td>
+                        <td>Marketing Assistant</td>
+                        <td>2021-2022</td>
+                    </tr>
+                    <tr>
+                        <td>TRM</td>
+                        <td>Business Assistant</td>
+                        <td>2022-2023</td>
+                    </tr>
+                <tbody>
+            </table>
+            <hr>
+            <br>
+        </section>
+
+
+            <form>
+                <h2>Contact me</h2>
+                <div>
+                    <label for="name">Name</label>
+                    <br>
+                    <input placeholder="Your full name" type="text" name="" id="label">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input placeholder="Your e-mail" type="email" name="" id="email">
+                </div>
+                <br>
+                <div>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea placeholder="Write your message here..." name="" id="message" cols="30"
+                        rows="10"></textarea>
+                </div>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+            <br>
+    </div>
+    <script src="main.js"></script>
 </body>
 
 
