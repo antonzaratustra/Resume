@@ -45,7 +45,7 @@ discoButton = document.querySelector('.fix_button')
 
 function makeDisco() { 
     if (discoButton.innerHTML === 'Start the disco') {
-        discoButton.innerHTML = 'Stop the disco'
+        discoButton.innerHTML = 'Stop the disco' 
         clearInterval(timerId)
         timerId = setInterval(setRandomBodyColor, 100)
     } else {
@@ -70,3 +70,73 @@ showPopup = (event) => {
 }
 
 sendButton.onclick = showPopup
+
+const EnglishTextElements = document.querySelectorAll('.En')
+const RussianTextElements = document.querySelectorAll('.Ru')
+
+console.log(EnglishTextElements)
+
+
+
+
+
+let currentLanguage = 'En';
+
+function changeLanguage() {
+
+if (currentLanguage === 'En') {
+    
+    for (let elem of RussianTextElements) {
+        elem.style.display = 'block'
+    }
+
+    for (let elem of EnglishTextElements) {
+        elem.style.display = 'none'
+    }
+
+    currentLanguage = 'Ru'
+    return
+} 
+
+if (currentLanguage === 'Ru') {
+    for (let elem of RussianTextElements) {
+        elem.style.display = 'none'
+    }
+
+    for (let elem of EnglishTextElements) {
+        elem.style.display = 'block'
+    } 
+    currentLanguage = 'En'
+    return
+}
+
+
+}
+
+
+const switchButton = document.querySelector('.switch_button')
+const switchActive = document.querySelector('.switch_button--active')
+
+
+function switchButtonLanguage() {
+    if (currentLanguage === 'En') { 
+        switchActive.style.left = '50%'
+        console.log('!')
+
+    } 
+
+    if (currentLanguage === 'Ru') {
+        switchActive.style.left = '0%'
+        console.log('?')
+
+    }
+
+changeLanguage()
+// switchActive.style.left = '50%'
+}
+
+switchButton.onclick = switchButtonLanguage
+
+
+
+

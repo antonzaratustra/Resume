@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 body {
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-family: 'Poppins', 'Raleway', 'Arial';
+    font-weight: 400px;
     background-color: rgb(45, 39, 47);
     color: #494949;
 }
@@ -76,7 +76,7 @@ form {
 input, textarea {
     border-radius: 10px;
     padding: 10px 15px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Raleway', 'Arial';
     font-size: 16px;
     border: none;
     min-width: 300px;
@@ -91,7 +91,7 @@ textarea {
 }
 
 button {
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Raleway', 'Arial';
     border-radius: 30px;
     color: whitesmoke;
     padding: 10px 30px;
@@ -211,7 +211,7 @@ flex-direction: column;
     color: whitesmoke;
     line-height: 5px;
     letter-spacing: 3px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Raleway', 'Arial';
     font-size: 9px;
     position: absolute;
     right: 60px;
@@ -311,3 +311,47 @@ header a:hover::after {
     visibility: visible;
 }
 
+.Ru {
+    display: none;
+}
+
+.switch_button_container {
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+    position: fixed;   
+    z-index: 5;
+}
+
+.switch_button {
+    color: whitesmoke;
+    /* text-align: center; */
+    display: flex;
+    word-spacing: 7px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    position: relative;
+    z-index: 5;
+    top: 2%;
+    left: 2%;
+    border-radius: 30px;
+}
+.switch_button--active {
+    transition: left 200ms;
+
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: 5;
+    top: 0%;
+    left: 0%;
+    border-radius: 30px;  
+}
