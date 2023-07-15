@@ -70,57 +70,45 @@ showPopup = (event) => {
 
 for (let button of sendButtons) {
     button.onclick = showPopup
-
 }
 
 closePopupButton.onclick = () => {popup.style.visibility = 'hidden'}
 
-
-
-
 const EnglishTextElements = document.querySelectorAll('.En')
 const RussianTextElements = document.querySelectorAll('.Ru')
-
-
-
 
 let currentLanguage = 'En';
 
 function changeLanguage() {
-
-if (currentLanguage === 'En') {
+    if (currentLanguage === 'En') {
     
-    for (let elem of RussianTextElements) {
-        elem.style.display = 'block'
-    }
+      for (let elem of RussianTextElements) {
+          elem.style.display = 'block'
+      }
 
-    for (let elem of EnglishTextElements) {
-        elem.style.display = 'none'
-    }
+      for (let elem of EnglishTextElements) {
+          elem.style.display = 'none'
+     }
 
     currentLanguage = 'Ru'
     return
 } 
 
-if (currentLanguage === 'Ru') {
-    for (let elem of RussianTextElements) {
-        elem.style.display = 'none'
-    }
+    if (currentLanguage === 'Ru') {
+        for (let elem of RussianTextElements) {
+            elem.style.display = 'none'
+     }
 
-    for (let elem of EnglishTextElements) {
-        elem.style.display = 'block'
-    } 
+      for (let elem of EnglishTextElements) {
+         elem.style.display = 'block'
+      } 
     currentLanguage = 'En'
     return
 }
-
-
 }
-
 
 const switchButton = document.querySelector('.switch_button')
 const switchActive = document.querySelector('.switch_button--active')
-
 
 function switchButtonLanguage() {
     if (currentLanguage === 'En') { 
@@ -130,9 +118,7 @@ function switchButtonLanguage() {
     if (currentLanguage === 'Ru') {
         switchActive.style.left = '0%'
     }
-
 changeLanguage()
-// switchActive.style.left = '50%'
 }
 
 switchButton.onclick = switchButtonLanguage
