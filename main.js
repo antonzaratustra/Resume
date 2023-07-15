@@ -60,22 +60,26 @@ discoButton.onclick = makeDisco
 
 const closePopupButton = document.querySelector('.close_button')
 const popup = document.querySelector('.popup_container')
-const sendButton = document.querySelector('.send')
-
-closePopupButton.onclick = () => {popup.style.visibility = 'hidden'}
+const sendButtons = document.querySelectorAll('.send')
+console.log(sendButtons)
 
 showPopup = (event) => {
     popup.style.visibility = 'visible'
     event. preventDefault()
 }
 
-sendButton.onclick = showPopup
+for (let button of sendButtons) {
+    button.onclick = showPopup
+
+}
+
+closePopupButton.onclick = () => {popup.style.visibility = 'hidden'}
+
+
+
 
 const EnglishTextElements = document.querySelectorAll('.En')
 const RussianTextElements = document.querySelectorAll('.Ru')
-
-console.log(EnglishTextElements)
-
 
 
 
@@ -121,14 +125,10 @@ const switchActive = document.querySelector('.switch_button--active')
 function switchButtonLanguage() {
     if (currentLanguage === 'En') { 
         switchActive.style.left = '50%'
-        console.log('!')
-
     } 
 
     if (currentLanguage === 'Ru') {
         switchActive.style.left = '0%'
-        console.log('?')
-
     }
 
 changeLanguage()
