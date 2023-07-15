@@ -197,14 +197,17 @@ flex-direction: column;
     z-index: 1;
     position: fixed;
     width: 200px;
+    
     color: whitesmoke;
     border-color: whitesmoke;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+
+    
 }
 
 .fix_button:hover {
     color: whitesmoke;
     border-color: whitesmoke;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
@@ -316,6 +319,7 @@ header a:hover::after {
 }
 
 .switch_button_container {
+    
     opacity: 0.8;
     cursor: pointer;
     font-size: 20px;
@@ -325,7 +329,16 @@ header a:hover::after {
     z-index: 5;
 }
 
+.switch_button:hover {
+    color: whitesmoke;
+    border: 1px solid orangered;
+    background-color: orangered;
+}
+
+
+
 .switch_button {
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
     color: whitesmoke;
     /* text-align: center; */
     display: flex;
@@ -354,4 +367,59 @@ header a:hover::after {
     top: 0%;
     left: 0%;
     border-radius: 30px;  
+}
+
+table td {
+    padding: 10px 10px;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+table {
+    text-align: center;
+
+}
+
+table :nth-child(1){
+    /* padding-left: 30px; */
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+table :nth-child(3){
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    /* padding-right: 30px; */
+
+
+}
+@media(max-width: 500px) {
+    
+    .switch_button_container {
+        top: auto;
+        left: auto;
+        /* bottom: 5%;;
+        left: 5%;       */
+
+        bottom: 85px;
+        left: 30px;
+    }
+
+    .switch_button {
+        border: 1px solid orangered;
+        color: orangered;
+    }
+
+    .switch_button--active {
+      background-color: orangered;
+
+    }
+
+    .switch_button--active:active,
+    .switch_button--active:hover {
+    background-color: whitesmoke;
+    }
+
 }
