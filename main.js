@@ -28,12 +28,10 @@ for (let card of cards) {card.addEventListener('mouseover', makeOreo)}
 
 let forms = document.getElementsByTagName('form')
 
-
 function randomBorderShiningAndColor() {
     forms[0].style.boxShadow = `${getRandomColor()} 5px 5px 5px`
     forms[0].style.color = `${getRandomColor()}`
 }
-
 
 let timerShining = setInterval(randomBorderShiningAndColor, 1000)
 
@@ -45,10 +43,7 @@ yearElement.innerHTML = `❤ Frontend from 2014 to ${currentYear}`
 
 discoButton = document.querySelector('.fix_button')
 
-function makeDisco() {
-    
-    
-    
+function makeDisco() { 
     if (discoButton.innerHTML === 'Start the disco') {
         discoButton.innerHTML = 'Stop the disco'
         clearInterval(timerId)
@@ -62,3 +57,16 @@ function makeDisco() {
 }
 
 discoButton.onclick = makeDisco
+
+const closePopupButton = document.querySelector('.close_button')
+const popup = document.querySelector('.popup_container')
+const sendButton = document.querySelector('.send')
+
+closePopupButton.onclick = () => {popup.style.visibility = 'hidden'}
+
+showPopup = (event) => {
+    popup.style.visibility = 'visible'
+    event. preventDefault()
+}
+
+sendButton.onclick = showPopup
